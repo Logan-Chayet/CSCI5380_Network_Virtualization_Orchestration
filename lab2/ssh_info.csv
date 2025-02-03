@@ -1,0 +1,4 @@
+hostname,ip,username,password
+lab1_cirros_1-2,172.24.4.12,cirros,gocubsgo
+lab1_cirros_1-1,172.24.4.13,cirros,gocubsgo
+cirros_auto_1,172.24.4.234,cirros,gocubsgo
