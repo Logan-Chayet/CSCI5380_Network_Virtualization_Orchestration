@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Network Health Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            width: 250px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Network Health Dashboard</h1>
+
+<div class="container">
+    <div class="card">
+        <a href="/gather">Gather Data</a>
+    </div>
+    <div class="card">
+        <a href="/train">Train Model</a>
+    </div>
+    <div class="card">
+        <a href="/predict">Predict Health</a>
+    </div>
+    <div class="card">
+        <a href="/ask">Logan AI</a>
+    </div>
+
+</div>
+
+</body>
+</html>
+

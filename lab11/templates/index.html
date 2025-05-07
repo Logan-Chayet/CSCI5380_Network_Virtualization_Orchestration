@@ -1,0 +1,33 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Device Health Monitor</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+        .healthy { color: green; font-size: 24px; }
+        .warning { color: orange; font-size: 24px; }
+        .failure { color: red; font-size: 24px; }
+        button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Device Health Monitor</h1>
+
+    {% if health_status %}
+        <h2>Device IP: {{ ip }}</h2>
+        <p>CPU: {{ cpu }}%</p>
+        <p>Input Errors: {{ in_errors }}</p>
+        <p>Output Errors: {{ out_errors }}</p>
+        <div class="{{ health_status }}">
+           <h2>Status: {{ health_status | capitalize }}</h2>
+        </div>
+    {% endif %}
+
+    <form method="post">
+        <button type="submit">Check Device Health</button>
+    </form>
+</body>
+</html>
+
